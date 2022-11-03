@@ -1,0 +1,33 @@
+$content-widths: (
+  desktop: 1128px,
+  tablet: 536px,
+  mobile: 328px,
+);
+
+@function content-width($breakpoint-type: large) {
+  @if map-has-key($content-widths, $breakpoint-type) {
+    @return map-get($content-widths, $breakpoint-type);
+  }
+
+  @return null;
+}
+
+@mixin desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+
