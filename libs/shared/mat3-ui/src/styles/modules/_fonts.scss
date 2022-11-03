@@ -2,3 +2,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 $font: 'Roboto', sans-serif;
+
+@mixin display-large {
+  font: 57px/64px $font;
+}
+
+@mixin display-medium {
+  font: 45px/52px $font;
+}
+
+@mixin display-small {
+  font: 36px/44px $font;
+}
+
+@mixin headline-large {
+  font: 36px/40px $font;
+}
+
+@mixin headline-medium {
+  font: 28px/36px $font;
+}
+
+@mixin headline-small {
+  font: 24px/32px $font;
+}
+
+@mixin title-large {
+  font: 22px/28px $font;
+  font-weight: 500;
+}
+
+@mixin title-medium {
+  font: 16px/24px $font;
+  font-weight: 500;
+}
+
+@mixin title-small {
+  font: 14px/20px $font;
+  font-weight: 500;
+}
+
+@mixin label-large {
+  font: 14px/20px $font;
+  font-weight: 500;
+}
+
+@mixin label-medium {
+  font: 12px/16px $font;
+  font-weight: 500;
+}
+
+@mixin label-small {
+  font: 11px/16px $font;
+  font-weight: 500;
+}
+
+@mixin body-large {
+  font: 16px/24px $font;
+}
+
+@mixin body-medium {
+  font: 14px/20px $font;
+}
+
+@mixin body-small {
+  font: 12px/16px $font;
+}
