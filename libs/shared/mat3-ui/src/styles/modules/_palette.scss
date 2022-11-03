@@ -1,3 +1,4 @@
+// Defining color palette
 $palette: (
   primary: (
     0: #000000,
@@ -90,3 +91,51 @@ $palette: (
     100: #ffffff,
   ),
 );
+
+@function from-palette($variant, $grade) {
+  $variant-map: map-get($palette, $variant);
+  @if map-has-key($map: $variant-map, $key: $grade) {
+    @return map-get($map: $variant-map, $key: $grade);
+  }
+  @return null;
+}
+
+// Defining theeme palette
+$theme: (
+  primary: from-palette(primary, 40),
+  on-primary: from-palette(primary, 100),
+  primary-container: from-palette(primary, 90),
+  on-primary-container: from-palette(primary, 10),
+
+  secondary: from-palette(secondary, 40),
+  on-secondary: from-palette(secondary, 100),
+  secondary-container: from-palette(secondary, 90),
+  on-secondary-container: from-palette(secondary, 10),
+
+  tertiary: from-palette(tertiary, 40),
+  on-tertiary: from-palette(tertiary, 100),
+  tertiary-container: from-palette(tertiary, 90),
+  on-tertiary-container: from-palette(tertiary, 10),
+
+  error: from-palette(error, 40),
+  on-error: from-palette(error, 100),
+  error-container: from-palette(error, 90),
+  on-error-container: from-palette(error, 10),
+
+  background: from-palette(neutral, 99),
+  on-background: from-palette(neutral, 10),
+  surface: from-palette(neutral, 99),
+  on-surface: from-palette(neutral, 10),
+
+  surface-variant: from-palette(neutral-variant, 90),
+  on-surface-variant: from-palette(neutral-variant, 30),
+  outline: from-palette(neutral-variant, 50),
+  outline-variant: from-palette(neutral-variant, 80),
+);
+
+@function color($color) {
+  @if map-has-key($map: $theme, $key: $color) {
+    @return map-get($map: $theme, $key: $color);
+  }
+  @return null;
+}

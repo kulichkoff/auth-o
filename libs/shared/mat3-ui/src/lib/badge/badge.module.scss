@@ -1,0 +1,6 @@
+@use '../../styles/modules/palette';
+
+
+.container {
+  background-color: palette.color(primary);
+}

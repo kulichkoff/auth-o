@@ -1,3 +1,4 @@
+import { Badge } from '@auth-o/shared/mat3-ui';
 import styles from './index.module.scss';
 
 export function Index() {
@@ -8,6 +9,7 @@ export function Index() {
    */
   return (
     <div className={styles.page}>
+      <Badge/>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
