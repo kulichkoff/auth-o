@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@auth-o/shared/mat3-ui": ["libs/shared/mat3-ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
