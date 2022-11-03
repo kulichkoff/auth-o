@@ -12,19 +12,19 @@ $content-widths: (
   @return null;
 }
 
-@mixin desktop {
+@mixin media-desktop {
   @media (min-width: 1440px) {
     @content;
   }
 }
 
-@mixin tablet {
+@mixin media-tablet {
   @media (min-width: 600px) {
     @content;
   }
 }
 
-@mixin mobile {
+@mixin media-mobile {
   @media (max-width: 599px) {
     @content;
   }

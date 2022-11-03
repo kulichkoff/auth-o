@@ -1,7 +1,6 @@
-@use '../../styles/modules/palette';
-@use '../../styles/modules/fonts';
+@use '../../styles/index.scss' as base;
 
 
 .container {
-  @include palette.surface(5);
+  @include base.surface(5);
 }
