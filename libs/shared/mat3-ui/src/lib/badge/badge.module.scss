@@ -2,5 +2,5 @@
 
 
 .container {
-  background-color: palette.color(primary);
+  @include palette.surface(5);
 }
