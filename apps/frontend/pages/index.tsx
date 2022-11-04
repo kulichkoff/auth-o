@@ -9,7 +9,7 @@ export function Index() {
    */
   return (
     <div className={styles.page}>
-      <Button >Hello</Button>
+      <Button type="text" disabled>Hello</Button>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
