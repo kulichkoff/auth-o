@@ -1,6 +1,6 @@
 # Material 3 Styles
 
-This is a styles module. There are some masics of Material Design such as
+This is a styles module. There are some basics of Material Design such as
 palette, typography, elevations abd even breakpoints.
 
 ## Include to the components
