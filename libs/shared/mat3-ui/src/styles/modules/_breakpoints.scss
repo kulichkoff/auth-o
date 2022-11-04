@@ -4,7 +4,7 @@ $content-widths: (
   mobile: 328px,
 );
 
-@function content-width($breakpoint-type: large) {
+@function content-width($breakpoint-type: desktop) {
   @if map-has-key($content-widths, $breakpoint-type) {
     @return map-get($content-widths, $breakpoint-type);
   }
