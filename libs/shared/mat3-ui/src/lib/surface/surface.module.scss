@@ -1,0 +1,7 @@
+@use '../../styles/index.scss' as mat3;
+
+@for $i from 0 through 5 {
+  .plus--#{$i} {
+    @include mat3.surface($i);
+  }
+}

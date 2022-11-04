@@ -1,4 +1,4 @@
-import { Badge, Button } from '@auth-o/shared/mat3-ui';
+import { Badge, Button, Surface } from '@auth-o/shared/mat3-ui';
 import styles from './index.module.scss';
 
 export function Index() {
@@ -9,7 +9,9 @@ export function Index() {
    */
   return (
     <div className={styles.page}>
+      <Surface plus={5}>
       <Button type="text" disabled>Hello</Button>
+      </Surface>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
