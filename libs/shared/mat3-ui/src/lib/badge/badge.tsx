@@ -1,12 +1,18 @@
 import styles from './badge.module.scss';
 
 /* eslint-disable-next-line */
-export interface BadgeProps {}
+export interface BadgeProps {
+  count?: number;
+}
 
 export function Badge(props: BadgeProps) {
   return (
-    <div className={styles['container']}>
-      <h1>Welcome to Badge!</h1>
+    <div className={styles['badge']}>
+      {props.count &&
+        <p>
+          {props.count}
+        </p>
+      }
     </div>
   );
 }

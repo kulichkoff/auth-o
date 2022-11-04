@@ -9,7 +9,7 @@ export function Index() {
    */
   return (
     <div className={styles.page}>
-      <Badge/>
+      <Badge count={null}/>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">

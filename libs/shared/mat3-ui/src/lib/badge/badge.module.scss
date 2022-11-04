@@ -1,6 +1,18 @@
-@use '../../styles/index.scss' as base;
+@use '../../styles/index.scss' as mat3;
 
+.badge {
+  min-width: 6px;
+  min-height: 6px;
+  width: fit-content;
+  padding: 0 4px;
+  border-radius: 100px;
+  background-color: mat3.color(error);
 
-.container {
-  @include base.surface(5);
+  p {
+    text-align: center;
+    color: mat3.color(on-error);
+    @include mat3.label-small;
+    user-select: none;
+    min-width: 8px;
+  }
 }
